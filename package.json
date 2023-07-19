@@ -1,0 +1,31 @@
+{
+  "name": "Bcalien",
+  "version": "1.6.0",
+  "description": "BcAlien, Phaser3.js implementation of Adventure Island inspired RPG platformer",
+  "homepage": "https://github.com/BrunoCosta19",
+  "main": "config.js",
+  "keywords": [
+    "game",
+    "rpg",
+    "phaser",
+    "platformer",
+    "phaserjs",
+    "phaser3-game"
+  ],
+  "author": "Brunocostah19",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BrunoCosta19"
+  },
+  "bugs": {
+    "url": "https://github.com/BrunoCosta19"
+  },
+  "devDependencies": {
+    "jshint": "^2.13.0",
+    "sass": "^1.37.5"
+  },
+  "dependencies": {
+    "terser": "^5.7.1"
+  }
+}

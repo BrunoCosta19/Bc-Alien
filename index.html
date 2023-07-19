@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Charset -->
+    <meta charset="UTF-8"/>
+
+    <!-- Google Search Console -->
+    <meta name="google-site-verification" content="HRn7srmOxlVc1jFK9_uLaURsxE4Pk5IXCrGup-orMvQ"/>
+
+    <!-- Description for Google Search -->
+    <meta name="description" content="Bc Alien, Phaser3.js implementation of Adventure Island inspired RPG platformer">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D0R53GEJZH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-D0R53GEJZH');
+    </script>
+
+    <!-- Titulo -->
+    <title>Bc Alien</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <h1 id="header">Bc Alien</h1>
+
+    <!-- World variable -->
+    <script type="text/javascript">
+      const world = {};
+      const header = document.getElementById("header");
+      header.onclick = () => {
+        open("https://user-images.githubusercontent.com/67921602/136305903-429d36f5-169d-4f68-a978-5ebe1ce025a2.mp4");
+      }
+    </script>
+
+    <!-- Phaser -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.16.2/dist/phaser.min.js"></script>
+
+    <!-- World -->
+    <script src="data/Grassland.js" charset="utf-8"></script>
+    <script src="data/Forest.js" charset="utf-8"></script>
+    <script src="data/Clouds.js" charset="utf-8"></script>
+    <script src="data/Boss.js" charset="utf-8"></script>
+
+    <!-- Scenes -->
+    <script src="scenes/Scene.js" charset="utf-8"></script>
+    <script src="scenes/Start.js" charset="utf-8"></script>
+    <script src="scenes/Levels.js" charset="utf-8"></script>
+    <script src="scenes/Credits.js" charset="utf-8"></script>
+    <script src="scenes/SignContent.js" charset="utf-8"></script>
+    <script src="scenes/Instructions.js" charset="utf-8"></script>
+
+    <!-- Config -->
+    <script src="config.js" charset="utf-8"></script>
+
+    <!-- Main script -->
+    <script src="script.js"></script>
+
+    <!-- Secondary files -->
+    <script src="main/Controls.js" charset="utf-8"></script>
+    <script src="main/Animations.js" charset="utf-8"></script>
+    <script src="main/Boss.js" charset="utf-8"></script>
+
+    <!-- Main files -->
+    <script src="main/preload.js" charset="utf-8"></script>
+    <script src="main/create.js" charset="utf-8"></script>
+    <script src="main/update.js" charset="utf-8"></script>
+
+    <!-- Footer -->
+    <footer>
+      <p id="license">
+        2023 - Bc Alien -
+      </p>
+      <br>
+      <a href="https://github.com/BrunoCosta19" target="_blank" id="github">
+        <img id="githubLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="GitHub Logo">
+        GitHub
+      </a>
+    </footer>
+  </body>
+</html>
